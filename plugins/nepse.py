@@ -20,4 +20,4 @@ async def response(message: Message):
             )
         ).json()
     )["body"]
-    await message.edit(resp)
+    await message.edit("<b>"+resp+"</b>")
