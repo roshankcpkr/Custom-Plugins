@@ -17,3 +17,12 @@ async def rashi(message: Message):
             request_rashi = rashifal.find("p")
             rashivalue = request_rashi.text.strip()
             await message.edit(csymbol.title() + ': '+ '\n' + "<code>" +rashivalue+"</code>")
+            
+            
+@userge.on_cmd("allrashi", about={
+    'header': "Get list of rashifal name",
+    'usage': "!allrashi"})
+async def rashinames(message: Message):         
+           rashiname = ['mesh','mithun', 'singha', 'tula', 'dhanu', 'kumbha', 'brish', 'karkat', 'kanya', 'brischik', 'makar', 'meen' ]
+           rashi_name = '\t'.join(rashiname)
+           await message.edit(rashi_name.title())
