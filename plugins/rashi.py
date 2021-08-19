@@ -16,7 +16,7 @@ async def rashi(message: Message):
          for rashifal in rashi_div:
             request_rashi = rashifal.find("p")
             rashivalue = request_rashi.text.strip()
-            await message.edit(csymbol.title() + ': '+ '\n' + "<code>" +rashivalue+"</code>")
+            await message.edit(csymbol.title() + ': '+ '\n' + rashivalue)
             
             
 @userge.on_cmd("allrashi", about={
