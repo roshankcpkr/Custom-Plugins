@@ -10,6 +10,20 @@ async def nepevent(message: Message):
           event = message.input_str
           if event == 'tihar':
             event = "bhaai"
+          if event == 'exam':
+            print(" Mangsir 28 gatey ho vai padna ja")
+          if event == 'iit':
+            print("2078-08-28")
+          if event == 'C':
+            print("2078-09-02")
+          if event == 'dl':
+            print("2078-09-05")
+          if event == 'maths':
+            print("2078-09-08")
+          if event == "physics":
+            print("2079-09-11")
+          if event == "study":
+            print("Ta pakka fail ho vai. Padna ja Gay")
           URL = "https://english.hamropatro.com/"
           page = requests.get(URL)
           soup = BeautifulSoup(page.content, "html.parser")
