@@ -16,6 +16,7 @@ async def nepevent(message: Message):
             await message.edit("2078-08-28")
           if event == 'C':
             await message.edit("2078-09-02")
+            break
           if event == 'dl':
             await message.edit("2078-09-05")
           if event == 'maths':
